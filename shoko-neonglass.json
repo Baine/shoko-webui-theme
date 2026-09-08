@@ -1,0 +1,8 @@
+{
+  "name": "Neonglass",
+  "version": "1.0.0",
+  "author": "tenasi (adapted for Shoko WebUI)",
+  "description": "Neonglass design adapted for Shoko WebUI (originally a theme for Unraid by tenasi, inspired by @zisen)",
+  "tags": ["dark", "glass", "neon"],
+  "cssUrl": "./shoko-neonglass.css"
+}
