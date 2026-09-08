@@ -9,8 +9,7 @@ the original. Sharp corners everywhere, hairline white borders, neon blue
 accents (`#3F65FB`), outline-style buttons that fill with a glow on hover, and
 the signature hue-cycling logo in the header. Dark only.
 
-> **Screenshots:** coming soon — drop a couple of PNGs in `assets/` and link
-> them here.
+![Neonglass running on Shoko WebUI](assets/screenshot-dashboard.png)
 
 ## Install
 
