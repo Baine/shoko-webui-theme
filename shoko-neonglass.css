@@ -154,6 +154,37 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* Dropdowns / combo boxes / menus (Headless UI listboxes, comboboxes,
+   menus) float above the page glass. The app paints them with the
+   translucent 25% panel layers, so the background photo bleeds through
+   and items are only readable on hover or when selected. Give the
+   open popovers a near-opaque surface instead. */
+[role='listbox'],
+[role='menu'] {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Rows inside those popovers stay #eee (inherited), but highlight with
+   the selected-row blue so hover/focus/selection are clearly visible. */
+[role='option'][data-focus],
+[role='option'][data-selected],
+[role='option']:hover,
+[role='menuitem']:hover {
+  background-color: rgba(63, 101, 251, 0.25);
+}
+
+/* Native <select> popups otherwise follow UA styling (light background,
+   light text), which renders item text invisible until hovered. */
+select {
+  color-scheme: dark;
+}
+
+select option,
+select optgroup {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #eee;
+}
+
 /* Toasts are chrome too — keep them readable (the app styles them with
    the 25% panel variable otherwise). */
 .Toastify__toast {
